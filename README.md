@@ -2,7 +2,7 @@
 
 You're in the control station and need to drive the rocket. You need to use your head (literally) to avoid the asteroids that are about to hit you!
 
-![](./static/images/VideoGIF3.gif)
+![VIdeoGIF3](https://github.com/jd-galvan/rocket-game/assets/117696769/32f166c3-96c2-4d73-9186-3fc1768076e9)
 
 This poject was made with Pygame and MediaPipe:
 
