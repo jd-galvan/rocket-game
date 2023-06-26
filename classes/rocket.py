@@ -3,7 +3,7 @@ import pygame
 
 INITIAL_POSITION_X = 320
 INITIAL_POSITION_Y = 540
-COUNTER_TO_CHANGE_IMG = 9
+COUNTER_TO_CHANGE_IMG = 6
 SPRITES = []
 for i in range(8):
     SPRITES.append(f"./sprites/rocket/tile00{i}.png")
@@ -15,8 +15,6 @@ class Rocket(pygame.sprite.Sprite):
         self.index = 0
         self.counter = 0
         self.image = pygame.image.load(SPRITES[self.index])
-        print(
-            f"dimensiones: {self.image.get_height()} / {self.image.get_width()}")
         self.rect = self.image.get_rect()
         self.rect.x = INITIAL_POSITION_X
         self.rect.y = INITIAL_POSITION_Y
