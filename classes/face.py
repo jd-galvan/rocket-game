@@ -35,7 +35,7 @@ class FaceDetection:
     def detect_movements(self, game_over):
         if self.results.multi_face_landmarks:
             for face_landmarks in self.results.multi_face_landmarks:
-                if game_over and (face_landmarks.landmark[152].y - face_landmarks.landmark[10].y < 0.45):
+                if game_over and (face_landmarks.landmark[152].y - face_landmarks.landmark[10].y < 0.40):
                     return cp.DOWN
                 if face_landmarks.landmark[10].x - face_landmarks.landmark[152].x > 0:
                     return cp.LEFT
